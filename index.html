@@ -1,0 +1,27 @@
+<head>
+    <title>Random Public Message Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h5>Генератор сообщений</h5>
+
+        <div class="row">
+            <textarea class="u-full-width" id="msg" disabled></textarea>
+        </div>
+        <form>
+            <label for="msg-type"></label>
+            <select name="msg-type" id="msg-type" class="u-full-width">
+                <option value="rnd">случайное</option>
+            </select>
+            <label>
+                <input type="checkbox" name="name-added" checked>
+                <span class="label-body">add name</span>
+            </label>
+            <input class="button-primary" type="submit" value="get msg">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
